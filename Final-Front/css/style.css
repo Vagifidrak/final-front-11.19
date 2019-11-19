@@ -1,0 +1,72 @@
+#header {
+  margin-bottom: 40px;
+}
+
+#header .Headersector a {
+  color: grey;
+  padding-top: 10px;
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.HeaderBar {
+  margin: auto;
+  width: 100%;
+  background-color: #1A2B48;
+}
+
+.HeaderBar .contactBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.HeaderBar .iconBar,
+.HeaderBar .contactBar {
+  color: white;
+  cursor: pointer;
+}
+
+.HeaderBar .iconBar ul,
+.HeaderBar .contactBar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+}
+
+.HeaderBar .iconBar ul li,
+.HeaderBar .contactBar ul li {
+  list-style: none;
+  padding: 8px;
+}
+
+.HeaderBar .iconBar ul li a,
+.HeaderBar .contactBar ul li a {
+  font-style: none;
+  color: white;
+}
+
+#section .Statistika .StatikBox {
+  position: relative;
+  border: 5px solid #5191FA;
+  text-align: center;
+  padding: 15px 80px 15px 80px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#section .Statistika .StatikBox :hover {
+  position: absolute;
+  background-color: #5191FA;
+  color: white;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+/*# sourceMappingURL=style.css.map */
