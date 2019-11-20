@@ -52,21 +52,127 @@
   color: white;
 }
 
-#section .Statistika .StatikBox {
-  position: relative;
-  border: 5px solid #5191FA;
-  text-align: center;
-  padding: 15px 80px 15px 80px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+#section {
+  margin-bottom: 50px;
 }
 
-#section .Statistika .StatikBox :hover {
-  position: absolute;
-  background-color: #5191FA;
-  color: white;
+#section h1 {
+  font-size: 28px;
+  color: #5191FA;
+  margin: .5em;
+}
+
+#section p {
+  font-size: 18px;
+  color: #768092;
+  line-height: 24px;
+}
+
+.Statistika .statikItem {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 5px solid #5191FA;
+  background-color: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Statistika .statikItem .StatikBox {
+  padding: 45px 0;
+}
+
+.Statistika .statikItem .desc {
+  display: none;
+}
+
+.Statistika .statikItem:hover {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: #5191FA;
+  color: white;
+  overflow: hidden;
+}
+
+.Statistika .statikItem:hover .StatikBox {
+  display: none;
+}
+
+.Statistika .statikItem:hover .desc {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+
+#message p {
+  font-size: 20px;
+  color: #1A2B48;
+  text-align: center;
+  font-weight: 300;
+  margin: 50px;
+}
+
+#message .messagePeople {
+  margin: auto;
+  text-align: center;
+}
+
+#message .messagePeople img {
+  width: 40%;
+}
+
+#message .messagePeople h4 {
+  font-size: 14px;
+  color: #1A2B48;
+}
+
+#message .messagePeople h5 {
+  font-size: 14px;
+  color: #768092;
+}
+
+.clear {
+  clear: both;
+}
+
+#SectionSlider .mySlider {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+}
+
+#SectionSlider .mySlider .slick-next {
+  right: 25px;
+  background-color: #1A2B48;
+  opacity: .8;
+  height: 50px;
+}
+
+#SectionSlider .mySlider .slick-prev {
+  left: 35px;
+  z-index: 5;
+}
+
+#SectionSlider .infoSLider h4 {
+  text-align: center;
+  font-size: 48px;
+  color: #FFF;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=style.css.map */

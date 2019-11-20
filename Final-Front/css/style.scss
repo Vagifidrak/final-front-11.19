@@ -1,13 +1,18 @@
+// Header Contact Start
 #header {
     margin-bottom: 40px;
 
+    // About MenuUp Start
     .Headersector a {
         color: grey;
         padding-top: 10px;
         display: inline-block;
         align-items: center;
     }
+
+    // About MenuUp  End
 }
+
 .HeaderBar {
     margin: auto;
     width: 100%;
@@ -17,6 +22,7 @@
         display: flex;
         justify-content: flex-end;
     }
+
     .iconBar,
     .contactBar {
         color: white;
@@ -38,20 +44,149 @@
         }
     }
 }
-#section{
-    .Statistika{
-        .StatikBox{
-            position: relative;
-            border: 5px solid #5191FA;
-            text-align: center;
-            padding: 15px 80px 15px 80px ;
-            justify-content: space-between;
-        
-        :hover{
-            position: absolute;
-            background-color: #5191FA;
-            color:white;
-            transform: rotateY(180deg);
-        }}
-    }   
+
+// Header Contact End
+
+
+// Header MenuBar Start
+
+// Header MenuBar End
+
+// Story start
+
+#section {
+    margin-bottom: 50px;
+
+    h1 {
+        font-size: 28px;
+        color: #5191FA;
+        margin: .5em;
+    }
+
+    p {
+        font-size: 18px;
+        color: #768092;
+        line-height: 24px;
+    }
 }
+
+// Story end
+
+//Startistika Start
+
+.Statistika {
+
+    .statikItem {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        position: relative;
+        overflow: hidden;
+        border: 5px solid #5191FA;
+        background-color: #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .StatikBox {
+            padding: 45px 0;
+        }
+
+        .desc {
+            display: none;
+        }
+
+        &:hover {
+            transform: rotateY(180deg);
+            transition: 1s;
+            background-color: #5191FA;
+            color: white;
+            overflow: hidden;
+
+            .StatikBox {
+                display: none;
+            }
+
+            .desc {
+                transform: rotateY(180deg);
+                display: block;
+                text-align: center;
+                font-size: 14px;
+                color: white;
+            }
+        }
+    }
+}
+
+// Startistika End
+
+// Message Start
+#message {
+    p {
+        font-size: 20px;
+        color: #1A2B48;
+        text-align: center;
+        font-weight: 300;
+        margin: 50px;
+    }
+
+    .messagePeople {
+        margin: auto;
+        text-align: center;
+
+        img {
+            width: 40%;
+        }
+
+        h4 {
+            font-size: 14px;
+            color: #1A2B48;
+        }
+
+        h5 {
+            font-size: 14px;
+            color: #768092;
+        }
+    }
+}
+
+// Message END
+
+.clear {
+    clear: both;
+}
+
+// Slider section Start 
+#SectionSlider {
+    .mySlider {
+        position: absolute;
+        width: 100%;
+        margin: auto;
+
+        .slick-next {
+            right: 25px;
+            background-color: #1A2B48;
+            opacity: .8;
+            height: 50px;
+        }
+
+        .slick-prev {
+            left: 35px;
+            z-index: 5;
+        }
+
+    }
+
+    .infoSLider {
+        h4 {
+            text-align: center;
+            font-size: 48px;
+            color: #FFF;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+// Slider section End
