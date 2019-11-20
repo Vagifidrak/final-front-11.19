@@ -1,56 +1,214 @@
-// Header Contact Start
+// Header Start
+// --------------
 #header {
-    margin-bottom: 40px;
-
-    // About MenuUp Start
-    .Headersector a {
-        color: grey;
-        padding-top: 10px;
-        display: inline-block;
-        align-items: center;
-    }
-
-    // About MenuUp  End
-}
-
-.HeaderBar {
-    margin: auto;
+    position: fixed;
     width: 100%;
-    background-color: #1A2B48;
+    z-index: 10000;
 
-    .contactBar {
-        display: flex;
-        justify-content: flex-end;
-    }
+    // .top-header start
+    .top-header {
+        padding: 15px;
+        width: 100%;
+        background-color: #1A2B48;
 
-    .iconBar,
-    .contactBar {
-        color: white;
-        cursor: pointer;
+        .mainDropdown {
+            .dropmenu {
+                background-color: #1A2B48;
+                padding-right: 30px;
+            }
 
-        ul {
-            display: flex;
-            color: white;
+            &:hover {
+                .dropmenu {
+                    display: block;
 
-            li {
-                list-style: none;
+                    li {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .sosial-icons {
+            i {
+                color: aliceblue;
                 padding: 8px;
+            }
+
+            a {
+                color: #FFF;
+                font-weight: 400;
+                font-size: 16px;
+                padding-top: 2px;
+            }
+        }
+
+        .text-header {
+            li {
+                padding-right: 20px;
 
                 a {
-                    font-style: none;
+                    cursor: pointer;
                     color: white;
+                    text-decoration: none;
+                    font-family: 'Poppins', sans-serif !important;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
+
+                i {
+                    padding-left: 8px;
+                }
+            }
+        }
+    }
+
+    // TOP HEADER END
+    // ----------------
+    // NAVBAR START
+    .navbar {
+
+        cursor: pointer;
+        z-index: 20;
+        padding: 20px;
+
+        .mainDropdown {
+            &:hover {
+                .pages-text {
+                    display: block;
+                }
+            }
+
+            li {
+                color: #6E7C85;
+
+                &:hover {
+                    color: #5191FA;
+                }
+            }
+        }
+
+        .all-text {
+
+            li {
+                font-weight: 600;
+            }
+
+            position: relative;
+
+            .bigDropped {
+
+                &:hover {
+                    .mainbigDropdown {
+                        border-radius: 15px;
+                        transform: translateY(0);
+                        opacity: 1;
+                        visibility: visible;
+                    }
+
+                }
+
+                .mainbigDropdown {
+                    opacity: 0;
+                    padding: 25px;
+                    visibility: hidden;
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+                    width: 100%;
+                    background: white;
+                    color: #000;
+                    transform: translateY(20px);
+                    transition: .3s ease-in-out;
+
+                    ul {
+                        list-style: none;
+
+
+                        li {
+                            border-bottom: 1px solid black;
+
+                            padding-top: 4px;
+                            color: #8D979E;
+                            font-size: 14px;
+                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+                            &:hover {
+                                color: #5192FA;
+                            }
+                        }
+                    }
+
+
+                }
+
+            }
+
+            li {
+                padding-right: 15px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 14px;
+                    padding-left: 20px;
+
+                    &:hover {
+                        color: #5192FA;
+                    }
+                }
+            }
+
+
+        }
+
+        .button1 {
+            font-size: 17px;
+            background-color: #FA5636;
+
+            &:hover {
+                background-color: #D3482E;
             }
         }
     }
 }
 
-// Header Contact End
+// ------------
+// HEADER END
+// SECTION1 START
+#section1 {
+    width: 100%;
+    height: 600px;
+    background-image: url(../image/background1.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    .hi-there {
+        position: absolute;
+        padding-top: 180px;
 
 
-// Header MenuBar Start
+        h1 {
+            font-weight: 500;
+            font-size: 54px;
+            color: #FFF;
 
-// Header MenuBar End
+        }
+
+        p {
+            padding-top: 7px;
+            font-size: 18px;
+            color: #FFF;
+            font-family: 'Poppins', sans-serif !important;
+            font-weight: 400;
+        }
+    }
+
+}
+
+// SECTION1 END
 
 // Story start
 

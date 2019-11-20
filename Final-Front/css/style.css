@@ -1,55 +1,175 @@
 #header {
-  margin-bottom: 40px;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
 }
 
-#header .Headersector a {
-  color: grey;
-  padding-top: 10px;
-  display: inline-block;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.HeaderBar {
-  margin: auto;
+#header .top-header {
+  padding: 15px;
   width: 100%;
   background-color: #1A2B48;
 }
 
-.HeaderBar .contactBar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+#header .top-header .mainDropdown .dropmenu {
+  background-color: #1A2B48;
+  padding-right: 30px;
 }
 
-.HeaderBar .iconBar,
-.HeaderBar .contactBar {
-  color: white;
-  cursor: pointer;
+#header .top-header .mainDropdown:hover .dropmenu {
+  display: block;
 }
 
-.HeaderBar .iconBar ul,
-.HeaderBar .contactBar ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#header .top-header .mainDropdown:hover .dropmenu li {
   color: white;
 }
 
-.HeaderBar .iconBar ul li,
-.HeaderBar .contactBar ul li {
-  list-style: none;
+#header .top-header .sosial-icons i {
+  color: aliceblue;
   padding: 8px;
 }
 
-.HeaderBar .iconBar ul li a,
-.HeaderBar .contactBar ul li a {
-  font-style: none;
+#header .top-header .sosial-icons a {
+  color: #FFF;
+  font-weight: 400;
+  font-size: 16px;
+  padding-top: 2px;
+}
+
+#header .top-header .text-header li {
+  padding-right: 20px;
+}
+
+#header .top-header .text-header li a {
+  cursor: pointer;
   color: white;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+#header .top-header .text-header li a:hover {
+  text-decoration: underline;
+}
+
+#header .top-header .text-header li i {
+  padding-left: 8px;
+}
+
+#header .navbar {
+  cursor: pointer;
+  z-index: 20;
+  padding: 20px;
+}
+
+#header .navbar .mainDropdown:hover .pages-text {
+  display: block;
+}
+
+#header .navbar .mainDropdown li {
+  color: #6E7C85;
+}
+
+#header .navbar .mainDropdown li:hover {
+  color: #5191FA;
+}
+
+#header .navbar .all-text {
+  position: relative;
+}
+
+#header .navbar .all-text li {
+  font-weight: 600;
+}
+
+#header .navbar .all-text .bigDropped:hover .mainbigDropdown {
+  border-radius: 15px;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+#header .navbar .all-text .bigDropped .mainbigDropdown {
+  opacity: 0;
+  padding: 25px;
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  background: white;
+  color: #000;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+#header .navbar .all-text .bigDropped .mainbigDropdown ul {
+  list-style: none;
+}
+
+#header .navbar .all-text .bigDropped .mainbigDropdown ul li {
+  border-bottom: 1px solid black;
+  padding-top: 4px;
+  color: #8D979E;
+  font-size: 14px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#header .navbar .all-text .bigDropped .mainbigDropdown ul li:hover {
+  color: #5192FA;
+}
+
+#header .navbar .all-text li {
+  padding-right: 15px;
+}
+
+#header .navbar .all-text li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  padding-left: 20px;
+}
+
+#header .navbar .all-text li a:hover {
+  color: #5192FA;
+}
+
+#header .navbar .button1 {
+  font-size: 17px;
+  background-color: #FA5636;
+}
+
+#header .navbar .button1:hover {
+  background-color: #D3482E;
+}
+
+#section1 {
+  width: 100%;
+  height: 600px;
+  background-image: url(../image/background1.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#section1 .hi-there {
+  position: absolute;
+  padding-top: 180px;
+}
+
+#section1 .hi-there h1 {
+  font-weight: 500;
+  font-size: 54px;
+  color: #FFF;
+}
+
+#section1 .hi-there p {
+  padding-top: 7px;
+  font-size: 18px;
+  color: #FFF;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 400;
 }
 
 #section {
