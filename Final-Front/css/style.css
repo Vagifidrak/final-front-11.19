@@ -1,7 +1,12 @@
 #header {
   position: fixed;
   width: 100%;
-  z-index: 10000;
+  z-index: 200;
+}
+
+#header.colorzilla {
+  background: grey !important;
+  opacity: 0.5;
 }
 
 #header .top-header {
@@ -55,9 +60,16 @@
 }
 
 #header .navbar {
+  -webkit-transition: .4s linear;
+  transition: .4s linear;
   cursor: pointer;
-  z-index: 20;
+  z-index: 100;
   padding: 20px;
+}
+
+#header .navbar.colorzilla {
+  background: black;
+  opacity: 0.8;
 }
 
 #header .navbar .mainDropdown:hover .pages-text {
@@ -65,6 +77,7 @@
 }
 
 #header .navbar .mainDropdown li {
+  padding: 10px;
   color: #6E7C85;
 }
 
@@ -90,7 +103,7 @@
 
 #header .navbar .all-text .bigDropped .mainbigDropdown {
   opacity: 0;
-  padding: 25px;
+  padding: 70px;
   visibility: hidden;
   position: absolute;
   left: 0;
@@ -98,6 +111,7 @@
   width: 100%;
   background: white;
   color: #000;
+  z-index: 10;
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   -webkit-transition: .3s ease-in-out;
@@ -110,9 +124,9 @@
 
 #header .navbar .all-text .bigDropped .mainbigDropdown ul li {
   border-bottom: 1px solid black;
-  padding-top: 4px;
+  padding-top: 10px;
   color: #8D979E;
-  font-size: 14px;
+  font-size: 16px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -135,12 +149,18 @@
   color: #5192FA;
 }
 
-#header .navbar .button1 {
+#header .navbar .local i {
+  color: white;
+  padding-right: 15px;
+  font-size: 30px;
+}
+
+#header .navbar .local .button1 {
   font-size: 17px;
   background-color: #FA5636;
 }
 
-#header .navbar .button1:hover {
+#header .navbar .local .button1:hover {
   background-color: #D3482E;
 }
 
@@ -206,6 +226,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .Statistika .statikItem .StatikBox {
@@ -219,8 +241,6 @@
 .Statistika .statikItem:hover {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  -webkit-transition: 1s;
-  transition: 1s;
   background-color: #5191FA;
   color: white;
   overflow: hidden;

@@ -1,178 +1,7 @@
 // Header Start
 // --------------
-#header {
-    position: fixed;
-    width: 100%;
-    z-index: 10000;
+@import '_header';
 
-    // .top-header start
-    .top-header {
-        padding: 15px;
-        width: 100%;
-        background-color: #1A2B48;
-
-        .mainDropdown {
-            .dropmenu {
-                background-color: #1A2B48;
-                padding-right: 30px;
-            }
-
-            &:hover {
-                .dropmenu {
-                    display: block;
-
-                    li {
-                        color: white;
-                    }
-                }
-            }
-        }
-
-        .sosial-icons {
-            i {
-                color: aliceblue;
-                padding: 8px;
-            }
-
-            a {
-                color: #FFF;
-                font-weight: 400;
-                font-size: 16px;
-                padding-top: 2px;
-            }
-        }
-
-        .text-header {
-            li {
-                padding-right: 20px;
-
-                a {
-                    cursor: pointer;
-                    color: white;
-                    text-decoration: none;
-                    font-family: 'Poppins', sans-serif !important;
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-
-                i {
-                    padding-left: 8px;
-                }
-            }
-        }
-    }
-
-    // TOP HEADER END
-    // ----------------
-    // NAVBAR START
-    .navbar {
-
-        cursor: pointer;
-        z-index: 20;
-        padding: 20px;
-
-        .mainDropdown {
-            &:hover {
-                .pages-text {
-                    display: block;
-                }
-            }
-
-            li {
-                color: #6E7C85;
-
-                &:hover {
-                    color: #5191FA;
-                }
-            }
-        }
-
-        .all-text {
-
-            li {
-                font-weight: 600;
-            }
-
-            position: relative;
-
-            .bigDropped {
-
-                &:hover {
-                    .mainbigDropdown {
-                        border-radius: 15px;
-                        transform: translateY(0);
-                        opacity: 1;
-                        visibility: visible;
-                    }
-
-                }
-
-                .mainbigDropdown {
-                    opacity: 0;
-                    padding: 25px;
-                    visibility: hidden;
-                    position: absolute;
-                    left: 0;
-                    top: 100%;
-                    width: 100%;
-                    background: white;
-                    color: #000;
-                    transform: translateY(20px);
-                    transition: .3s ease-in-out;
-
-                    ul {
-                        list-style: none;
-
-
-                        li {
-                            border-bottom: 1px solid black;
-
-                            padding-top: 4px;
-                            color: #8D979E;
-                            font-size: 14px;
-                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-                            &:hover {
-                                color: #5192FA;
-                            }
-                        }
-                    }
-
-
-                }
-
-            }
-
-            li {
-                padding-right: 15px;
-
-                a {
-                    text-decoration: none;
-                    color: white;
-                    font-size: 14px;
-                    padding-left: 20px;
-
-                    &:hover {
-                        color: #5192FA;
-                    }
-                }
-            }
-
-
-        }
-
-        .button1 {
-            font-size: 17px;
-            background-color: #FA5636;
-
-            &:hover {
-                background-color: #D3482E;
-            }
-        }
-    }
-}
 
 // ------------
 // HEADER END
@@ -246,7 +75,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
+        transition: 1s;
+        
         .StatikBox {
             padding: 45px 0;
         }
@@ -257,7 +87,7 @@
 
         &:hover {
             transform: rotateY(180deg);
-            transition: 1s;
+            
             background-color: #5191FA;
             color: white;
             overflow: hidden;
