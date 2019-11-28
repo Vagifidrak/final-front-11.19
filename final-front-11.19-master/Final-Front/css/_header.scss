@@ -1,0 +1,199 @@
+// Header Start
+// --------------
+#header {
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+
+    &.colorzilla {
+        background: grey !important;
+        opacity: 0.5;
+    }
+
+    // .top-header start
+    .top-header {
+
+        padding: 15px;
+        width: 100%;
+        background-color: #1A2B48;
+
+        .mainDropdown {
+
+            .dropmenu {
+                background-color: #1A2B48;
+                padding-right: 30px;
+            }
+
+            &:hover {
+                .dropmenu {
+                    display: block;
+
+                    li {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .sosial-icons {
+            i {
+                color: aliceblue;
+                padding: 8px;
+            }
+
+            a {
+                color: #FFF;
+                font-weight: 400;
+                font-size: 16px;
+                padding-top: 2px;
+            }
+        }
+
+        .text-header {
+            li {
+                padding-right: 20px;
+
+                a {
+                    cursor: pointer;
+                    color: white;
+                    text-decoration: none;
+                    font-family: 'Poppins', sans-serif !important;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                i {
+                    padding-left: 8px;
+                }
+            }
+        }
+    }
+
+    // TOP HEADER END
+    // ----------------
+    // NAVBAR START
+    .navbar {
+        transition: .4s linear;
+
+        &.colorzilla {
+            background: black;
+            opacity: 0.8;
+        }
+
+        cursor: pointer;
+        z-index: 100;
+        padding: 20px;
+
+        .mainDropdown {
+            &:hover {
+                .pages-text {
+                    display: block;
+                }
+            }
+
+            li {
+                padding: 10px;
+                color: #6E7C85;
+
+                &:hover {
+                    color: #5191FA;
+                }
+            }
+        }
+
+        .all-text {
+
+            li {
+                font-weight: 600;
+            }
+
+            position: relative;
+
+            .bigDropped {
+                &:hover {
+                    .mainbigDropdown {
+                        border-radius: 15px;
+                        transform: translateY(0);
+                        opacity: 1;
+                        visibility: visible;
+                    }
+
+                }
+
+                .mainbigDropdown {
+                    opacity: 0;
+                    padding: 70px;
+                    visibility: hidden;
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+                    width: 100%;
+                    background: white;
+                    color: #000;
+                    z-index: 10;
+                    transform: translateY(20px);
+                    transition: .3s ease-in-out;
+
+                    ul {
+                        list-style: none;
+
+
+                        li {
+                            border-bottom: 1px solid black;
+
+                            padding-top: 10px;
+                            color: #8D979E;
+                            font-size: 16px;
+                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+                            &:hover {
+                                color: #5192FA;
+                            }
+                        }
+                    }
+
+
+                }
+
+            }
+
+            li {
+                padding-right: 15px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 14px;
+                    padding-left: 20px;
+
+                    &:hover {
+                        color: #5192FA;
+                    }
+                }
+            }
+
+
+        }
+        .local{
+            i{
+                color: white;
+                padding-right: 15px;
+                font-size: 30px;
+            }
+                    .button1 {
+                        font-size: 17px;
+                        background-color: #FA5636;
+            
+                        &:hover {
+                            background-color: #D3482E;
+                        }
+                    }
+        }
+
+    }
+}
+
+// ------------
+// HEADER END
