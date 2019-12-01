@@ -1,0 +1,287 @@
+#header {
+  width: 100%;
+  background-image: url(../image/searchHeader.jpg);
+  z-index: 5000;
+  background-size: cover;
+}
+
+#header.colorzilla {
+  background: grey !important;
+  opacity: 0.5;
+}
+
+#header .hi-there {
+  font-size: 36px;
+  color: #FFF;
+  letter-spacing: 0;
+  text-align: left;
+  margin: 0;
+  padding: 30px;
+}
+
+#header .top-header {
+  padding: 15px;
+  width: 100%;
+  background-color: #1A2B48;
+}
+
+#header .top-header .mainDropdown .dropmenu {
+  background-color: #1A2B48;
+  padding-right: 30px;
+}
+
+#header .top-header .mainDropdown:hover .dropmenu {
+  display: block;
+}
+
+#header .top-header .mainDropdown:hover .dropmenu li {
+  color: white;
+}
+
+#header .top-header .sosial-icons i {
+  color: aliceblue;
+  padding: 8px;
+}
+
+#header .top-header .sosial-icons a {
+  color: #FFF;
+  font-weight: 400;
+  font-size: 16px;
+  padding-top: 2px;
+}
+
+#header .top-header .text-header li {
+  padding-right: 20px;
+}
+
+#header .top-header .text-header li a {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+#header .top-header .text-header li a:hover {
+  text-decoration: underline;
+}
+
+#header .top-header .text-header li i {
+  padding-left: 8px;
+}
+
+#header .navbar {
+  z-index: 5001;
+  -webkit-transition: .4s linear;
+  transition: .4s linear;
+  cursor: pointer;
+  z-index: 2000;
+  padding: 20px;
+}
+
+#header .navbar.colorzilla {
+  background: black;
+  opacity: 0.8;
+}
+
+#header .navbar .mainDropdown:hover .pages-text {
+  display: block;
+}
+
+#header .navbar .mainDropdown li {
+  padding: 10px;
+  color: #6E7C85;
+}
+
+#header .navbar .mainDropdown li:hover {
+  color: #5191FA;
+}
+
+#header .navbar .all-text {
+  position: relative;
+}
+
+#header .navbar .all-text li {
+  font-weight: 600;
+}
+
+#header .navbar .all-text .bigDropped:hover .mainbigDropdown {
+  border-radius: 15px;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+#header .navbar .all-text .bigDropped .mainbigDropdown {
+  opacity: 0;
+  padding: 70px;
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  background: white;
+  color: #000;
+  z-index: 10;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+#header .navbar .all-text .bigDropped .mainbigDropdown ul {
+  list-style: none;
+}
+
+#header .navbar .all-text .bigDropped .mainbigDropdown ul li {
+  border-bottom: 1px solid black;
+  padding-top: 10px;
+  color: #8D979E;
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#header .navbar .all-text .bigDropped .mainbigDropdown ul li:hover {
+  color: #5192FA;
+}
+
+#header .navbar .all-text li {
+  padding-right: 15px;
+}
+
+#header .navbar .all-text li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  padding-left: 20px;
+}
+
+#header .navbar .all-text li a:hover {
+  color: #5192FA;
+}
+
+#header .navbar .button1 {
+  font-size: 17px;
+  background-color: #FA5636;
+}
+
+#header .navbar .button1:hover {
+  background-color: #D3482E;
+}
+
+#header .headerMap {
+  position: absolute;
+}
+
+#header .sectionSearchAll {
+  position: relative;
+}
+
+#header .sectionSearchAll .sectionSearch {
+  background-color: black;
+}
+
+.range {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 200px;
+  margin-top: 10px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  background: #3bade3;
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #3bade3), color-stop(25%, #576fe6), color-stop(51%, #9844b7), color-stop(100%, #ff357f));
+  background: linear-gradient(45deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3bade3 ', endColorstr='#ff357f ', GradientType=1);
+  height: 2px;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-moz-range-track {
+  -moz-appearance: none;
+  background: #3bade3;
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #3bade3), color-stop(25%, #576fe6), color-stop(51%, #9844b7), color-stop(100%, #ff357f));
+  background: linear-gradient(45deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3bade3 ', endColorstr='#ff357f ', GradientType=1);
+  height: 2px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 2px solid;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  max-width: 80px;
+  position: relative;
+  bottom: 11px;
+  background-color: #1d1c25;
+  cursor: -webkit-grab;
+  -webkit-transition: border 1000ms ease;
+  transition: border 1000ms ease;
+}
+
+input[type=range]::-moz-range-thumb {
+  -moz-appearance: none;
+  border: 2px solid;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  max-width: 80px;
+  position: relative;
+  bottom: 11px;
+  background-color: #1d1c25;
+  cursor: -moz-grab;
+  -webkit-transition: border 1000ms ease;
+  transition: border 1000ms ease;
+}
+
+.range.blue::-webkit-slider-thumb {
+  border-color: #3bade3;
+}
+
+.range.ltpurple::-webkit-slider-thumb {
+  border-color: #576fe6;
+}
+
+.range.purple::-webkit-slider-thumb {
+  border-color: #9844b7;
+}
+
+.range.pink::-webkit-slider-thumb {
+  border-color: #ff357f;
+}
+
+.range.blue::-moz-range-thumb {
+  border-color: #3bade3;
+}
+
+.range.ltpurple::-moz-range-thumb {
+  border-color: #576fe6;
+}
+
+.range.purple::-moz-range-thumb {
+  border-color: #9844b7;
+}
+
+.range.pink::-moz-range-thumb {
+  border-color: #ff357f;
+}
+
+input[type=range]::-webkit-slider-thumb:active {
+  cursor: -webkit-grabbing;
+}
+
+input[type=range]::-moz-range-thumb:active {
+  cursor: -moz-grabbing;
+}
+/*# sourceMappingURL=style.css.map */
