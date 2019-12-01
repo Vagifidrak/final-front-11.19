@@ -1,0 +1,269 @@
+// Story start
+
+#section {
+    margin-bottom: 50px;
+
+    h1 {
+        font-size: 28px;
+        color: #5191FA;
+        margin: .5em;
+    }
+
+    p {
+        font-size: 18px;
+        color: #768092;
+        line-height: 24px;
+    }
+}
+
+// Story end
+
+//Startistika Start
+
+.Statistika {
+    position: relative;
+
+    .statikItem {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border: 5px solid #5191FA;
+        background-color: #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .StatikBox {
+            padding: 45px 0;
+        }
+
+        .desc {
+            display: none;
+        }
+
+        &:hover {
+            transform: rotateY(180deg);
+            transition: 1s;
+            background-color: #5191FA;
+            color: white;
+            overflow: hidden;
+
+            .StatikBox {
+                display: none;
+            }
+
+            .desc {
+                transform: rotateY(180deg);
+                display: block;
+                text-align: center;
+                font-size: 14px;
+                color: white;
+            }
+        }
+    }
+}
+
+// Startistika End
+
+// Message Start
+#message {
+    p {
+        font-size: 20px;
+        color: #1A2B48;
+        text-align: center;
+        font-weight: 300;
+        margin: 50px;
+    }
+
+    .messagePeople {
+        margin: auto;
+        text-align: center;
+
+        img {
+            width: 40%;
+        }
+
+        h4 {
+            font-size: 14px;
+            color: #1A2B48;
+        }
+
+        h5 {
+            font-size: 14px;
+            color: #768092;
+        }
+    }
+}
+
+// Message END
+
+
+// Slider section Start
+#SectionSlider {
+    position: relative;
+
+    .infoSlider {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        h4 {
+            font-size: 48px;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        a {
+            padding: 10px 20px;
+            font-size: 14px;
+            color: #FFF;
+            font-weight: 400;
+            background-color: #FA5636;
+            border: none;
+        }
+
+    }
+
+    .mySlider {
+        overflow: hidden;
+
+        .imgItem {
+            position: relative;
+
+            .imgAtem {
+                height: 500px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .slick-next,
+        .slick-prev {
+            right: 80px;
+            opacity: .8;
+
+            &::before {
+                padding: 15px;
+                background-color: #1A2B48;
+                border-radius: 15px;
+                font-size: 1.5rem;
+            }
+        }
+
+        .slick-prev {
+            left: 35px;
+            z-index: 5;
+        }
+    }
+}
+
+// Slider section End
+
+// Leadership Start             
+#leaderShip {
+    text-align: center;
+
+    h1 {
+        font-size: 28px;
+        color: #1A2B48;
+        margin-bottom: 20px;
+    }
+
+    .LeaderTeam {
+        h2 {
+            font-size: 20px;
+            color: #1A2B48;
+            font-weight: 500;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #768092;
+            font-style: italic;
+            padding-bottom: 40px;
+        }
+    }
+
+    .teamHover {
+
+        .teamImage {
+            position: relative;
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 15px;
+            margin: auto;
+
+            &:hover {
+                .teamSosial {
+                    opacity: .9;
+                    visibility: visible;
+                    background-color: #5191FA;
+                }
+
+                a {
+                    color: white;
+                }
+            }
+
+            .teamSosial {
+                position: absolute;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                visibility: hidden;
+                top: 0%;
+                left: 0%;
+                z-index: 15;
+                opacity: .7;
+                font-size: 20px;
+                width: 100%;
+                height: 100%;
+                transition: .3s;
+
+                a {
+                    margin-right: 10px;
+                }
+            }
+
+        }
+    }
+}
+
+// Leadership End
+
+// Subscribe Start
+#subscribeBar {
+    padding-top: 65px;
+    padding-bottom: 40px;
+    background: #F5F5F5;
+
+    .subscribeTitle {
+        h1 {
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 16px;
+            color: #5E6D77
+        }
+    }
+
+    .subscribeInput {
+        .form-control {
+            border-radius: 4px;
+        }
+
+        input {
+            height: 55px;
+        }
+    }
+}
+
+// Subscribe End

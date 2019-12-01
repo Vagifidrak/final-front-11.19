@@ -1,0 +1,77 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+@import '_header';
+@import '_home';
+@import '_footer';
+@import '_about';
+@import '_blog';
+@import '_contact';
+
+@media (max-width:768px){
+    #section4 {
+        .slider {
+          .slick-prev {
+           display: none !important;
+          }
+          .slick-next {
+            display: none !important;
+          }
+        }
+    }
+    .navActive{
+        width: 0%;
+        opacity: 0;
+        visibility: hidden;
+    }
+    #section1{
+        height: 400px;
+        background-size: cover;
+        .hi-there{
+            top: 60%;
+            transform: translateY(-60%);
+
+        }
+        
+    }
+    .mainNav,.cont-phone,.cont-email{
+        display: none;
+    }
+    .closeNavIcon{
+        display: block;
+    }
+    .img-contact{
+        img{
+            position: absolute;
+            display: none;
+        }
+        .ltd{
+            border-radius: 5px !important;
+            position: relative !important;
+            margin-top: 38px !important;
+            margin-left: 20px !important;
+            width: 100% !important;
+            padding: 30px;
+        }
+    }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    #mobile{
+        display: none;
+        
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
+
